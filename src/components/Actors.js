@@ -1,11 +1,27 @@
 import React from 'react';
 import { actors } from '../data';
 
-const Actors = () => {
+const Actors = (actor) => {
+  {console.log(`ac`,actors)}
   return (
-    <div>
-      {/*{code here}*/}
+    
+    <div className="actor">
+      <h1>Actors Page</h1>
+    
+       {actors.map(actor=>
+          <div >{actor.name}
+          
+          <ul>
+              { actor.movies.map(movie=>
+                <li>{movie}</li>
+              )}
+          
+          </ul>
+          </div>
+       )}
+     
     </div>
+  
   );
 };
 
