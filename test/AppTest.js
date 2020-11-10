@@ -16,9 +16,9 @@ describe('App', () => {
     wrapper = shallow(<App />);
   })
 
-  it('contains a <NavBar /> component', () => {
-    expect(wrapper.find('NavBar').length).to.equal(1);
-  });
+  // it('contains a <NavBar /> component', () => {
+  //   expect(wrapper.find('NavBar').length).to.equal(1);
+  // });
 
   it('contains a <Route path="/">', () => {
     const route = wrapper.findWhere(n => n.props().path === '/')
