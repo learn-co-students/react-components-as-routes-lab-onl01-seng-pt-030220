@@ -8,7 +8,6 @@ const Movies = () => {
       {movies.map((movie,i) => (
         <div key={i}>
           <h3>Name: {movie.title}</h3>
-          <p>Runtime: {movie.time}</p>
           <p>Genres:</p>
           <ul>
             {movie.genres.map((genre,i) =>(
